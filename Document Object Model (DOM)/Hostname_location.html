@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Belajar Javascript - NIOMIC</title>
+  </head>
+  <body>
+    <p id="hostname"></p>
+    <button onclick="lihat_hostname()">Lihat Hostname</button>
+  </body>
+  <script type="text/javascript">
+    function lihat_hostname() {
+      var x = location.hostname;
+      document.getElementById("hostname").innerHTML = x;
+    }
+  </script>
+</html>

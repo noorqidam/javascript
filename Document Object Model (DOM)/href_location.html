@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Belajar Javascript - NIOMIC</title>
+  </head>
+  <body>
+    <p id="href"></p>
+    <button onclick="lihat_href()">Lihat Hostname</button>
+  </body>
+  <script type="text/javascript">
+    function lihat_href() {
+      var x = location.href;
+      document.getElementById("href").innerHTML = x;
+    }
+  </script>
+</html>

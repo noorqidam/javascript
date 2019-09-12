@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Open Window</title>
+  </head>
+  <body>
+    <button onclick="bukaWin()">Buka Window</button>
+    <button onclick="tutupWin()">Tutup Window</button>
+  </body>
+  <script type="text/javascript">
+    function bukaWin() {
+      myWindow = window.open("","Niomic","width=500,height=400");
+      myWindow.document.writer("<p>Anda Berhasil Membuka Window</p>");
+    }
+    function tutupWin() {
+      myWindow.close();
+    }
+  </script>
+</html>

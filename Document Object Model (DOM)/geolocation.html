@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar Javascript - NIOMIC</title>
+  </head>
+  <body>
+    <p>Click tombol ini untuk mendapatkan kordinat</p>
+    <button onclick="getLocation()">Coba Dapatkan Posisi</button>
+    <p id="lokasi"></p>
+    <script type="text/javascript">
+      var x = document.getElementById("lokasi");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(tunjukanPosisi);
+        } else {
+          x.innerHTML = "Geolocation tidak mensupport browser anda.";
+        }
+      }
+
+      function tunjukanPosisi(position){
+        x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>

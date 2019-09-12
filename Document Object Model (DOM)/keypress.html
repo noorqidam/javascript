@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar Javascript - NIOMIC</title>
+  </head>
+  <body>
+    <p>Textbox akan berubah saat dilakukan keyevent</p>
+
+    Ini Keypress : <input type="text" onkeypress="ubahtextbox(this)">
+    Ini Keydown : <input type="text" onkeydown="ubahtextbox(this)">
+    Ini Keyup : <input type="text" onkeyup="ubahtextbox(this)">
+    <script type="text/javascript">
+      function ubahtextbox (x) {
+        x.style.background="lightblue";
+      }
+    </script>
+  </body>
+</html>

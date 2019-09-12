@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar Javascript - NIOMIC</title>
+  </head>
+  <body>
+    <p id="contoh">contoh</p>
+
+    <button onclick="Tombol()">Klik</button>
+    <script type="text/javascript">
+      function Tombol() {
+        var a = document.baseURI;
+        var b = document.documentURI;
+        document.body.style.backgroundColor = "green";
+        document.getElementById("contoh").innerHTML = a;
+        document.getElementById("contoh").innerHTML = b;
+      }
+    </script>
+  </body>
+</html>
